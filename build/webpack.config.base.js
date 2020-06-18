@@ -56,21 +56,6 @@ module.exports = {
           }
         }
       },{
-        test: /\.md$/,
-        use: [
-          {
-            loader: 'vue-loader',
-            options: {
-              compilerOptions: {
-                preserveWhitespace: false
-              }
-            }
-          },
-          {
-            loader: path.resolve(__dirname, './md-loader/index.js')
-          }
-        ]
-      },{
         test: /\.ts$/,
         exclude: /node_modules/,
         loader: "ts-loader",

@@ -23,15 +23,15 @@ import demoBlock from './components/nDemoBlock';
 import hljs from 'highlight.js/lib/highlight';
 import 'highlight.js/styles/github.css';
 import './style/index.scss';
-Vue.use(Ninecat);
-Vue.directive('highlight', function (el) {
-  let blocks = el.querySelectorAll('pre code');
-  blocks.forEach((block) => {
-    hljs.highlightBlock(block);
-  });
-});
+// Vue.use(Ninecat);
+// Vue.directive('highlight', function (el) {
+//   let blocks = el.querySelectorAll('pre code');
+//   blocks.forEach((block) => {
+//     hljs.highlightBlock(block);
+//   });
+// });
 
-Vue.component('demo-block', demoBlock);
+// Vue.component('demo-block', demoBlock);
 
 export default {
   name: 'App',

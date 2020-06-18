@@ -32,7 +32,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "vue": "2.6.10",
+    "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "vue": "^3.0.0-beta.15",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.5.0"
   },
@@ -88,11 +89,10 @@
     "uglify-es": "3.3.9",
     "url-loader": "1.1.2",
     "vue-jest": "3.0.4",
-    "vue-loader": "15.7.0",
+    "vue-loader": "^16.0.0-beta.3",
     "vue-markdown": "^2.2.4",
     "vue-router": "3.0.6",
     "vue-style-loader": "4.1.2",
-    "vue-template-compiler": "2.6.10",
     "webpack": "4.39.2",
     "webpack-cli": "3.3.6",
     "webpack-dev-server": "3.8.0",

@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router';
-import Vue from 'vue';
+import { createApp } from 'vue';
 import hljs from 'highlight.js';
 import docConfig from '../doc.config';
 import { getLang } from '../util/lang';
@@ -11,7 +11,7 @@ function loadDoc (lang, path) {
   return resolve => require.ensure([], () => resolve(require(`../markdown${path}/${docLang}/index.md`)));
 }
 
-Vue.use(VueRouter);
+createApp().use(VueRouter);
 
 export const commonRoutes = [
   {
