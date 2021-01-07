@@ -1,24 +1,21 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "strictNullChecks": false,
     "strict": true,
-    "allowJs": true,
-    "noImplicitThis": true,
-    "esModuleInterop": true,
     "moduleResolution": "node",
-    "target": "es5",
-    "module": "es2015",
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "jsx": "preserve",
-    "jsxFactory": "h"
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["dom", "es2017"],
+    "skipLibCheck": true,
+    "allowJs": true
   },
-  "include": [
-    "types/**/*",
-    "src/**/*",
-    "node_modules/t-systems-aurelia-components/src/**/*.ts"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.spec.js",
-    "node_modules",
-  ]
+  "exclude": ["node_modules", "lib", "es"],
+  "include": ["./"]
 }

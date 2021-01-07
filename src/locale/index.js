@@ -1,7 +1,8 @@
 import enLang from './lang/en-US';
 import zhLang from './lang/zh-CN';
-import Vue from 'vue';
 import deepmerge from 'deepmerge';
+import { createApp } from 'vue'
+const app = createApp()
 
 const navigatorLanguage = navigator.language || navigator.userLanguage;
 
@@ -9,13 +10,13 @@ let lang = navigatorLanguage === 'en-US' ? enLang : zhLang;
 
 let merged = false;
 let i18nHandler = function () {
-  const vuei18n = Object.getPrototypeOf(this || Vue).$t;
-  if (typeof vuei18n === 'function' && Vue.locale) {
+  const vuei18n = Object.getPrototypeOf(app.config.globalProperties).$t;
+  if (typeof vuei18n === 'function' && app.config.globalProperties.locale) {
     if (!merged) {
       merged = true;
-      Vue.locale(
-        Vue.config.lang,
-        deepmerge(lang, Vue.locale(Vue.config.lang) || {}, { clone: true })
+      app.config.globalProperties.locale(
+        app.config.lang,
+        deepmerge(lang, app.locale(app.config.lang) || {}, { clone: true })
       );
     }
     return vuei18n.apply(this, arguments);

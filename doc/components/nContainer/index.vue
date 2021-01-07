@@ -49,6 +49,7 @@ export default {
   },
   computed: {
     currentPage () {
+      console.log(this.$route)
       const { path } = this.$route;
       if (path) {
         return path.split('/').slice(-1)[0];
@@ -69,6 +70,14 @@ export default {
   box-sizing: border-box;
   color: #34495e;
   padding-left: 220px;
+
+  .n-doc-content--,.n-doc-content--nAbout{
+    h1 {
+      img{
+        margin: 5px;
+      }
+    }
+  }
 
   .n-doc-content {
     flex: 1;

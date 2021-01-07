@@ -8,7 +8,7 @@
 
 <h1 align="center">ninecat-ui</h1>
 
-<h3 align="center">A Light Vue 2.0 Web UI Framework</h3>
+<h3 align="center">A Light Vue 3.0 Web UI Framework</h3>
 
 
 
@@ -17,8 +17,8 @@
 [![Build Status](https://travis-ci.com/ninecat-ui/ninecat-ui.svg?branch=master)](https://travis-ci.com/ninecat-ui/ninecat-ui)
 [![codecov](https://codecov.io/gh/ninecat-ui/ninecat-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/ninecat-ui/ninecat-ui)
 ![MIT](https://img.shields.io/badge/license-MIT-000000.svg)
-![webpack](https://img.shields.io/badge/webpack-4-blue.svg)
-![vue](https://img.shields.io/badge/vue-2.6.10-green.svg)
+![webpack](https://img.shields.io/badge/webpack-5-blue.svg)
+![vue](https://img.shields.io/badge/vue-3.0.2-green.svg)
 
 </div>
 
@@ -86,6 +86,8 @@ $ yarn install
 $ yarn start
 ```
 
+Use Vue3 to refactor component（Doing and need help）
+
 ## ✅ Todo List
 
 - [x] Document directory custom configuration.
@@ -102,6 +104,7 @@ $ yarn start
 - [ ] Color theme customization.
 - [ ] Globalization.
 - [x] Mixed develop with typescript and JavaScript.
+- [x] Use Vue3 to refactor component（Doing and need help）.
 
 ## 🤝 Join Discussion Group
 

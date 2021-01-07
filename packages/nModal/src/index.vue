@@ -1,7 +1,7 @@
 <template>
   <transition name="nmodal">
     <div
-      v-if="show"
+      v-if="modalShow"
       class="n-modal-wrapper"
     >
       <div
@@ -46,7 +46,7 @@
 
 <script>
 import Locale from '../../../src/mixins/locale';
-import nButton from '../../nButton';
+import nButton from '../../n-button';
 
 export default {
   name: 'NModal',
@@ -76,15 +76,22 @@ export default {
       default: function () {}
     }
   },
+  data () {
+    modalShow: false
+  },
+  mouted () {
+    this.modalShow = false
+  },
   computed: {
     sizeClass () {
       const { size } = this;
       return size;
-    }
+    },
   },
+  emits: ['update:show'],
   methods: {
     closeModal () {
-      this.$emit('update:show', false);
+      this.modalShow = false
     },
     nconfirm () {
       if (typeof this.confirm === 'function') {

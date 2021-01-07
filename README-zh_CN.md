@@ -6,7 +6,7 @@
 
 <h1 align="center">ninecat-ui</h1>
 
-<h3 align="center">一个清爽的Vue 2.0 UI Web框架</h3>
+<h3 align="center">一个清爽的Vue 3.0 UI Web框架</h3>
 
 
 
@@ -15,8 +15,8 @@
 [![Build Status](https://travis-ci.com/ninecat-ui/ninecat-ui.svg?branch=master)](https://travis-ci.com/ninecat-ui/ninecat-ui)
 [![codecov](https://codecov.io/gh/ninecat-ui/ninecat-ui/branch/master/graph/badge.svg)](https://codecov.io/gh/ninecat-ui/ninecat-ui)
 ![MIT](https://img.shields.io/badge/license-MIT-000000.svg)
-![webpack](https://img.shields.io/badge/webpack-4-blue.svg)
-![vue](https://img.shields.io/badge/vue-2.6.10-green.svg)
+![webpack](https://img.shields.io/badge/webpack-5-blue.svg)
+![vue](https://img.shields.io/badge/vue-3.0.2-green.svg)
 
 </div>
 
@@ -82,6 +82,8 @@ $ yarn install
 $ yarn start
 ```
 
+现在正在用VUE3重构组件，需要帮助，和我一下啊！
+
 ## ✅ Todo List
 
 - [x] 自定义文档目录结构
@@ -97,7 +99,7 @@ $ yarn start
 - [ ] 集成codepen完成在线编辑代码
 - [ ] 自定义主题色
 - [ ] 国际化
-- [ ] Typescript 和 JavaScript混合开发
+- [x] Typescript 和 JavaScript混合开发
 
 ## 🤝加入讨论群
 
